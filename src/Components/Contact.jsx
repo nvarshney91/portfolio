@@ -12,7 +12,7 @@ function Contact(){
         setErr([]);
         console.log(err);
         if(!name){
-            setErr(["!!NO name not found!!"])
+            setErr(["!!NO name found!!"])
             return;
         }
         if(!desc){
@@ -20,10 +20,10 @@ function Contact(){
             return;
         }
         if(err.length ===0){
-            console.log([
+            console.log({  
                     name,
-                    desc
-            ])
+                    description:desc
+        })
         } 
     }
     return(
