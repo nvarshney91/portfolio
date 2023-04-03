@@ -24,6 +24,7 @@ function Contact(){
                     name,
                     description:desc
         })
+            setSubmit(true);
         } 
     }
     return(
@@ -52,8 +53,7 @@ function Contact(){
             {
                 err.length>0 && <h1 className="text-rose-600">{err[0]}</h1>
             }
-        </form> :
-        <h1 className="text-rose-200">Batmobile incoming</h1>
+        </form> :  <h1 className="text-rose-200">Batmobile incoming</h1>
         }
         
         </div>
